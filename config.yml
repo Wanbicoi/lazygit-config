@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+services:
+  "gitlab.simplemdg.com": "gitlab:gitlab.simplemdg.com"
+gui:
+  nerdFontsVersion: "3"
+git:
+  pagers:
+    - pager: delta --light --paging=never
