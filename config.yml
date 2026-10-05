@@ -1,8 +1,52 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+notARepository: skip
 services:
   "gitlab.simplemdg.com": "gitlab:gitlab.simplemdg.com"
 gui:
+  showFileTree: false
+  sidePanelWidth: 0.25
   nerdFontsVersion: "3"
+  theme:
+    activeBorderColor:
+      - "#286983"
+      - bold
+
+    inactiveBorderColor:
+      - "#9893a5"
+
+    searchingActiveBorderColor:
+      - "#d7827e"
+      - bold
+
+    optionsTextColor:
+      - "#56949f"
+
+    selectedLineBgColor:
+      # - "#286983"
+      - "#f2e9e1"
+      - bold
+
+    # inactiveViewSelectedLineBgColor:
+    #   - "#f2e9e1"
+    #   - bold
+
+    cherryPickedCommitFgColor:
+      - "#fffaf3"
+
+    cherryPickedCommitBgColor:
+      - "#d7827e"
+
+    markedBaseCommitFgColor:
+      - "#56949f"
+
+    markedBaseCommitBgColor:
+      - "#ea9d34"
+
+    unstagedChangesColor:
+      - "#b4637a"
+
+    defaultFgColor:
+      - "#575279"
 git:
-  pagers:
-    - pager: delta --light --paging=never
+  diffRenderers:
+    - command: delta --light --paging=never -s --line-numbers
