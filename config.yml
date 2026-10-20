@@ -48,5 +48,5 @@ gui:
     defaultFgColor:
       - "#575279"
 git:
-  diffRenderers:
-    - command: delta --light --paging=never -s --line-numbers
+  pagers:
+    - pager: delta --light --paging=never -s --line-numbers
