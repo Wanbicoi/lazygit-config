@@ -49,4 +49,4 @@ gui:
       - "#575279"
 git:
   pagers:
-    - pager: delta --light --paging=never -s --line-numbers
+    - pager: delta --light --paging=never --line-numbers
