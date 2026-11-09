@@ -3,7 +3,10 @@ notARepository: skip
 services:
   "gitlab.simplemdg.com": "gitlab:gitlab.simplemdg.com"
 gui:
-  showFileTree: false
+  showFileTree: true
+  # Start with the side panel at half the screen (same as pressing '+' once),
+  # because the change list at sidePanelWidth 0.25 is too narrow to read.
+  screenMode: half
   sidePanelWidth: 0.25
   nerdFontsVersion: "3"
   theme:
@@ -49,4 +52,4 @@ gui:
       - "#575279"
 git:
   pagers:
-    - pager: delta --light --paging=never --line-numbers
+    - pager: delta --light --paging=never --navigate --hunk-header-style "file line-number" --hunk-header-decoration-style blue
